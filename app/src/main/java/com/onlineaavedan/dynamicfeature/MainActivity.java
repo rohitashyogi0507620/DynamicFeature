@@ -36,13 +36,9 @@ public class MainActivity extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(Exception e) {
-
                     Toast.makeText(getApplicationContext(), "Failed .." + e.getMessage(), Toast.LENGTH_SHORT).show();
-
                 }
             });
-
-
         });
     }
 }
