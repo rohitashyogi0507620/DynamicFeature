@@ -7,14 +7,32 @@
     android:background="@color/purple_500"
     tools:context=".CaptureActivity">
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/txt_center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_foreground"></ImageView>
+
     <TextView
-        android:textStyle="bold"
-        android:textColor="@color/white"
+        android:id="@+id/txt_center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:text="@string/title_capturephotos"
-        android:textSize="30dp"></TextView>
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/bnt_start"
+        android:layout_margin="10dp"
+        android:text="Start New Module "
+        android:backgroundTint="@color/purple_200"
+        android:layout_below="@id/txt_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></Button>
 
 </RelativeLayout>
