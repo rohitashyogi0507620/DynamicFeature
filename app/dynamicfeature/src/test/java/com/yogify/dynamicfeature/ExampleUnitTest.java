@@ -1,4 +1,4 @@
-package com.yogify.dynamicfeature;
+package com.onlineaavedan.dynamicfeature;
 
 import org.junit.Test;
 

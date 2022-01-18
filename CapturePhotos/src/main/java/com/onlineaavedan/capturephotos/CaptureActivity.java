@@ -1,4 +1,4 @@
-package com.yogify.capturephotos;
+package com.onlineaavedan.capturephotos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
