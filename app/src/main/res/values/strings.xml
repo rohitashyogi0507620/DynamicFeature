@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">DynamicFeature</string>
-    <string name="title_dynamicfeature">DynamicFeatureModule</string>
+    <string name="title_capturephotos">Capture Photo</string>
 </resources>

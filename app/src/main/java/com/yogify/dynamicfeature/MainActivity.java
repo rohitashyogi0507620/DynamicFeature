@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnaddfeature.setOnClickListener(view -> {
 
             SplitInstallManager splitInstallManager = SplitInstallManagerFactory.create(getApplicationContext());
-            SplitInstallRequest splitInstallRequest = SplitInstallRequest.newBuilder().addModule(getString(R.string.title_dynamicfeature)).build();
+            SplitInstallRequest splitInstallRequest = SplitInstallRequest.newBuilder().addModule(getString(R.string.title_capturephotos)).build();
             splitInstallManager.startInstall(splitInstallRequest)
                     .addOnSuccessListener(new OnSuccessListener<Integer>() {
                         @Override
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onFailure(Exception e) {
 
-                    Toast.makeText(getApplicationContext(), "Failed ..", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Failed .." + e.getMessage(), Toast.LENGTH_SHORT).show();
 
                 }
             });
